@@ -1,8 +1,8 @@
 const readlineSync = require ("readline-sync")
 
-let Students= readlineSync.question("\nStudents:\n")
-let Teachers= readlineSync.question("\nTeachers: \n")
-let Capacity= readlineSync.question("\nBus Capacity: \n")
+let Students= readlineSync.question("\nStudents: ")
+let Teachers= readlineSync.question("\nTeachers: ")
+let Capacity= readlineSync.question("\nBus Capacity: ")
 
 const People= parseInt(Students) + parseInt(Teachers)
 const Number_of_buses=Math.ceil(People/Capacity)
