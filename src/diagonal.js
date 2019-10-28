@@ -1,6 +1,6 @@
 const readlineSync = require ("readline-sync")
-let Width_inches= readlineSync.question("\nWidth:\n")
-let Length_inches= readlineSync.question("\nLength:\n")
+let Width_inches= readlineSync.question("\nWidth: ")
+let Length_inches= readlineSync.question("\nLength: ")
 
 const D= Length_inches + Width_inches
 let Diagonal= Math.hypot(Length_inches,Width_inches)
