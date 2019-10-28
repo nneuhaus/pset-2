@@ -1,7 +1,7 @@
 const readlineSync = require ("readline-sync")
-let Width_inches= readlineSync.question("\nWidth:\n")
+let Width_inches= readlineSync.question("\nWidth: ")
 const Width_cm=Width_inches * 2.54
-let Length_inches= readlineSync.question("\nLength:\n")
+let Length_inches= readlineSync.question("\nLength: ")
 const Length_cm= Length_inches * 2.54
 let Perimeter= Length_cm+Length_cm+Width_cm+Width_cm
 Perimeter = Perimeter.toLocaleString("en", { minimmumFractionDigits: 2, maximumFractionDigits: 2 });
